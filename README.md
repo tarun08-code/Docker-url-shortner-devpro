@@ -53,9 +53,9 @@ API Test
 ![alt text](<screenshoots/Screenshot 2026-03-07 185131.png>)
 
 How to Run the Project
-git clone https://github.com/yourusername/dockerized-url-shortener.git
+git clone https://github.com/tarun08-code/Docker-url-shortner-devpro
 
-cd dockerized-url-shortener
+cd DOCKERIMP-DEVPRO
 
 docker compose up --build
 
@@ -70,4 +70,4 @@ Features
 
   - Containerized with Docker
 
-  - Multi-container setup using Docker Compose# Docker-url-shortner-devpro
+  - Multi-container setup using Docker Compose
