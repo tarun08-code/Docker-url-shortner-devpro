@@ -4,28 +4,16 @@ services:
   redis:
     image: redis:alpine
     container_name: redis
-    ports:
-      - "6379:6379"
     volumes:
       - redis_data:/data
-    networks:
-      - url-shortener-network
 
   app:
-    build: .
+    image: tarun08code/url-shortener:latest  # Changed from 'build: .'
     container_name: url-shortener
     ports:
       - "3000:3000"
     depends_on:
       - redis
-    environment:
-      - REDIS_URL=redis://redis:6379
-    networks:
-      - url-shortener-network
 
 volumes:
   redis_data:
-
-networks:
-  url-shortener-network:
-    driver: bridge

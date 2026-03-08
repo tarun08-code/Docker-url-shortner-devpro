@@ -2,7 +2,24 @@
 ![Node](https://img.shields.io/badge/Node.js-Backend-green)
 ![Redis](https://img.shields.io/badge/Redis-Database-red)
 
+How to use 
 
+# URL Shortener
+
+## Quick Start
+```bash
+# Pull and run
+docker-compose up -d
+
+# Test
+curl -X POST http://localhost:3000/shorten \
+  -H "Content-Type: application/json" \
+  -d '{"url": "https://google.com"}'
+```
+
+## Images
+- App: `tarun08code/url-shortener:latest`
+- Redis: `redis:alpine`
 
 # Dockerized URL Shortener
 
