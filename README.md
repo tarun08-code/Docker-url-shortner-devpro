@@ -60,7 +60,7 @@ cd DOCKERIMP-DEVPRO
 docker compose up --build
 
 Docker Hub Image
-docker pull tarun08/url-shortener
+docker pull tarun08code/url-shortener
 
 Features
 
